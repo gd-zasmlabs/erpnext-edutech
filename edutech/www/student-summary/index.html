@@ -1,0 +1,56 @@
+{% extends "templates/web.html" %}
+
+{% block title %}Student Summary{% endblock %}
+
+{% block page_content %}
+<h2>Student Summary</h2>
+
+<div style="display: flex; gap: 20px; align-items: center;">
+  <!-- Dropdown -->
+  <div class="dropdown-container">
+    <div class="dropdown-toggle" onclick="toggleDropdown()">Select Students</div>
+    <div class="dropdown-menu" id="student-dropdown">
+      <ul id="student-checkboxes"></ul>
+    </div>
+  </div>
+
+  <div>
+    <label><input type="checkbox" id="filter_course" checked> Show Course</label>
+    <label><input type="checkbox" id="filter_grade" checked> Show Grade</label>
+    <label><input type="checkbox" id="filter_attendance" checked> Show Attendance</label>
+  </div>
+
+  <button id="generate-btn" class="btn btn-primary" onclick="generateSummary()">Generate</button>
+</div>
+
+<div id="summary-table" style="margin-top: 30px;"></div>
+
+<style>
+.dropdown-container {
+  position: relative;
+  width: 220px;
+}
+.dropdown-toggle {
+  background-color: #f0f0f0;
+  padding: 8px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.dropdown-menu {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  display: none;
+}
+.dropdown-menu.show {
+  display: block;
+}
+</style>
+
+<script src="/assets/edutech/www/student-summary/index.js"></script>
+{% endblock %}

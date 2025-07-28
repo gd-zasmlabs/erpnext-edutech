@@ -1,15 +1,13 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{enrollment_date}",
- "creation": "2025-07-22 12:30:36.986916",
+ "creation": "2025-07-28 11:46:21.688351",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "student",
   "program",
-  "academic_year",
   "enrollment_date"
  ],
  "fields": [
@@ -30,28 +28,18 @@
    "reqd": 1
   },
   {
-   "fieldname": "academic_year",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Academic Year",
-   "reqd": 1
-  },
-  {
    "fieldname": "enrollment_date",
    "fieldtype": "Date",
-   "in_list_view": 1,
-   "label": "Enrollment Date",
-   "reqd": 1
+   "label": "Enrollment Date"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-23 12:01:42.963011",
+ "modified": "2025-07-28 11:46:21.688351",
  "modified_by": "Administrator",
  "module": "Student Management",
- "name": "Enrollment",
- "naming_rule": "Expression",
+ "name": "Program Enrollment",
  "owner": "Administrator",
  "permissions": [
   {

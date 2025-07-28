@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{course_code}",
  "creation": "2025-07-22 12:27:25.123836",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -40,10 +41,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-22 12:27:25.123836",
+ "modified": "2025-07-23 13:07:09.572390",
  "modified_by": "Administrator",
  "module": "Student Management",
  "name": "Course",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

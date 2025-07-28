@@ -1,11 +1,14 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{first_name}.-{####}",
  "creation": "2025-07-22 12:22:47.962442",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "details_tab",
+  "section_break_j3kg",
   "student_id",
   "first_name",
   "last_name",
@@ -13,7 +16,13 @@
   "date_of_birth",
   "email",
   "phone",
-  "address"
+  "address",
+  "section_break_hzrr",
+  "summary_info",
+  "more_info_tab",
+  "program_enrolled",
+  "enrollment_date",
+  "course_code"
  ],
  "fields": [
   {
@@ -60,15 +69,59 @@
    "fieldname": "address",
    "fieldtype": "Small Text",
    "label": "Address"
+  },
+  {
+   "fieldname": "program_enrolled",
+   "fieldtype": "Link",
+   "label": "Program Enrolled",
+   "options": "Program"
+  },
+  {
+   "fieldname": "details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "section_break_j3kg",
+   "fieldtype": "Section Break",
+   "label": "Contact Info"
+  },
+  {
+   "fieldname": "more_info_tab",
+   "fieldtype": "Tab Break",
+   "label": "More Info"
+  },
+  {
+   "fieldname": "enrollment_date",
+   "fieldtype": "Link",
+   "label": "Enrollment Date",
+   "options": "Enrollment"
+  },
+  {
+   "fieldname": "course_code",
+   "fieldtype": "Link",
+   "label": "Course Code",
+   "options": "Course"
+  },
+  {
+   "fieldname": "section_break_hzrr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "summary_info",
+   "fieldtype": "HTML",
+   "label": "Summary Info",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-22 12:22:47.962442",
+ "modified": "2025-07-24 11:27:06.446925",
  "modified_by": "Administrator",
  "module": "Student Management",
  "name": "Student",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

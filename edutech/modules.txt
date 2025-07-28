@@ -1,4 +1,5 @@
 EduTech
-student_managementfaculty_management
+Student Management
+student_managemnt
 faculty_management
 Faculty Management

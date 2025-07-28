@@ -5,6 +5,20 @@ app_description = "Education Management System"
 app_email = "gd@zasmlabs.com"
 app_license = "mit"
 
+# API route
+override_whitelisted_methods = {
+    "edutech.api.random_user.fetch_random_user": "edutech.api.random_user.fetch_random_user"
+}
+
+# API Route
+override_whitelisted_methods = {
+    "edutech.api.student_summary.get_student_summary": "edutech.api.student_summary.get_student_summary"
+}
+
+# Optional: for API to work properly
+app_include_js = "/apps/edutech/edutech/www/student_report/index.js"
+
+
 # Apps
 # ------------------
 
