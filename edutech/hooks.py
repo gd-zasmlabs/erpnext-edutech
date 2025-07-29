@@ -3,8 +3,39 @@ app_title = "EduTech"
 app_publisher = "Glavin"
 app_description = "Education Management System"
 app_email = "gd@zasmlabs.com"
+
 app_license = "mit"
 
+<<<<<<< HEAD:edutech/hooks.py
+=======
+# Register API methods for dashboard
+override_whitelisted_methods = {
+    "edutech.api.random_user.fetch_random_user": "edutech.api.random_user.fetch_random_user",
+    "edutech.api.student_summary.get_student_summary": "edutech.api.student_summary.get_student_summary",
+    "edutech.edutech.api.dashboard.get_student_counts": "edutech.edutech.api.dashboard.get_student_counts",
+    "edutech.edutech.api.dashboard.get_student_summary": "edutech.edutech.api.dashboard.get_student_summary",
+    "edutech.edutech.api.dashboard.get_faculty_data": "edutech.edutech.api.dashboard.get_faculty_data"
+}
+
+# Add website route rule to serve dashboard at /dashboard
+website_route_rules = [
+    {"from_route": "/dashboard", "to_route": "dashboard"}
+]
+
+
+# Register API methods for dashboard
+override_whitelisted_methods.update({
+    "edutech.edutech.api.dashboard.get_student_counts": "edutech.edutech.api.dashboard.get_student_counts",
+    "edutech.edutech.api.dashboard.get_student_summary": "edutech.edutech.api.dashboard.get_student_summary",
+    "edutech.edutech.api.dashboard.get_faculty_data": "edutech.edutech.api.dashboard.get_faculty_data"
+})
+
+# Add website route rule to serve dashboard at /dashboard
+website_route_rules = [
+    {"from_route": "/dashboard", "to_route": "dashboard/index.html"}
+]
+
+>>>>>>> 20598db (Add complete app folders (api, www, templates, student_management, etc)):hooks.py
 # API route
 override_whitelisted_methods = {
     "edutech.api.random_user.fetch_random_user": "edutech.api.random_user.fetch_random_user"

@@ -1,0 +1,3 @@
+EduTech
+Student Management
+Faculty Management
